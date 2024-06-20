@@ -1,7 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { BsGithub } from "react-icons/bs";
 
 const Project = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 1200, // Animation duration in milliseconds
+      });
+    }
+  }, []);
+
   return (
     <>
       <div id="Project" className="bg-[#202b35] text-white">
@@ -10,7 +23,7 @@ const Project = () => {
           My Some Recent Project
         </p>
       </div>
-      <div className="bg-[#202b35]">
+      <div data-aos="fade-down" className="bg-[#202b35]">
         <div className="px-6 flex flex-col gap-5 min-[480px]:flex-row">
           <div className="relative">
             <img src={`/img/project-edu-app.png`} alt="project" />

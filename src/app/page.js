@@ -7,7 +7,7 @@ import Education from "./component/edu";
 
 export default function Home() {
   return (
-    <div id="3in1" className="">
+    <div id="3in1" className="bg-[#202b35] text-white">
       <Navbar />
       <Hero />
       <Education />

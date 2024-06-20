@@ -29,8 +29,8 @@ const SubmitForm = () => {
             <textarea
               rows={3}
               cols={4}
-              className="w-full outline-none bg-[#262f38] placeholder:text-[14px]"
-              placeholder="Write Message"
+              className="w-full outline-none bg-[#262f38] placeholder:text-[14px] "
+              placeholder="Write Messages"
             />
           </div>
           <button className="bg-[#2222] w-full text-[18px] py-4" type="submit">

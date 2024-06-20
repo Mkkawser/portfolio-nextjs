@@ -1,4 +1,5 @@
 import React from "react";
+import { GoHeartFill } from "react-icons/go";
 
 const Footer = () => {
   return (
@@ -8,8 +9,14 @@ const Footer = () => {
           Thanks for <span className="text-[#ecdf24] underline">visiting</span>
         </p>
         <p className="pt-10">© All rights reserved</p>
-        <p>Made by Kawser Hossain </p>
-        <p>2023</p>
+        <p className="flex items-center gap-2">
+          Made with
+          <span>
+            <GoHeartFill className="text-[red]" />
+          </span>
+          by Kawser Hossain
+        </p>
+        <p>2024</p>
       </div>
     </>
   );
